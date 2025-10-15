@@ -1,0 +1,971 @@
+{
+    "mitra": [
+  {
+    "namaMitra": "Sabar Paima Hamonangan Tumanggor",
+    "alamatMitra": "Jl. Tanjung Duren Timur GG Mandalika 1 No. 44 RT 005 RW 06"
+  },
+  {
+    "namaMitra": "Suherlina",
+    "alamatMitra": "Jl.tanjung duren utara XI no.12"
+  },
+  {
+    "namaMitra": "WIDIASTUTI",
+    "alamatMitra": "Jalan utama sakti raya no 25"
+  },
+  {
+    "namaMitra": "Malelo Beno",
+    "alamatMitra": "PEDONGKELAN RT005 RW 016 KEL.KAPUK CENGKARENG, Cengkareng"
+  },
+  {
+    "namaMitra": "Panji noor",
+    "alamatMitra": "Kp.bali pesing"
+  },
+  {
+    "namaMitra": "Lukman",
+    "alamatMitra": "Semanan, Kalideres"
+  },
+  {
+    "namaMitra": "Siti Nurhayati",
+    "alamatMitra": "Kp krendang baru rt 10 rw 02 no 33, Tambora"
+  },
+  {
+    "namaMitra": "Budi Rachmat syah",
+    "alamatMitra": "utama sakti raya no.11 Rt 003 Rw 007"
+  },
+  {
+    "namaMitra": "Susanti",
+    "alamatMitra": "Jl raya kebon jeruk RT.004/009"
+  },
+  {
+    "namaMitra": "David Kurniawan",
+    "alamatMitra": "Jl sahabat baru no 33"
+  },
+  {
+    "namaMitra": "Rustinah",
+    "alamatMitra": "Kebon Jeruk"
+  },
+  {
+    "namaMitra": "Vaujiah",
+    "alamatMitra": "Kedoya Selatan"
+  },
+  {
+    "namaMitra": "RINA ROSMALIA",
+    "alamatMitra": "Jl.DR Semeru II RT 08 rw09 no 14"
+  },
+  {
+    "namaMitra": "Muhayah",
+    "alamatMitra": "Jl.Dr.Semeru Raya No.17A"
+  },
+  {
+    "namaMitra": "Eko Setyaji Marwono",
+    "alamatMitra": "Jalan taman mutiara no. 11"
+  },
+  {
+    "namaMitra": "Tino",
+    "alamatMitra": "JL.SENI BUDAYA RAYA RT004 RW 005"
+  },
+  {
+    "namaMitra": "Fitriyanti",
+    "alamatMitra": "Jalan. H. Suaib 1 gg. 4 rt. 003/013"
+  },
+  {
+    "namaMitra": "Asliyah",
+    "alamatMitra": "Jl Yakub No 37-D rt 005 / rw 008"
+  },
+  {
+    "namaMitra": "Bachtiar mulyana",
+    "alamatMitra": "Jl. Rawa bahagia 8/10 Rt008/Rw02."
+  },
+  {
+    "namaMitra": "Nurmayanti",
+    "alamatMitra": "Jl Yakub No 26A Rt 005/ Rw 008"
+  },
+  {
+    "namaMitra": "SRI YULIASIH",
+    "alamatMitra": "Pondok Bandung/72A RT.008/002 Jl. Arjuna"
+  },
+  {
+    "namaMitra": "Yanah Kartika",
+    "alamatMitra": "JL. KS TUBUN I NO. 6 RT 5 RW 2"
+  },
+  {
+    "namaMitra": "YASMITA",
+    "alamatMitra": "KP. KECIL NO 9 RT 011/001"
+  },
+  {
+    "namaMitra": "HARNI",
+    "alamatMitra": "JL. DAHLIA RT. 12/02 JOGLO KEMBANGAN JAKARTA BARAT"
+  },
+  {
+    "namaMitra": "Nurmalasari",
+    "alamatMitra": "Jalan penyelesaian tomang 1 gg.samblun rt.001 rw.001"
+  },
+  {
+    "namaMitra": "Wasono Rachmatmuktio",
+    "alamatMitra": "Jalan Liam no 31 RT011/RW007"
+  },
+  {
+    "namaMitra": "AMINULLAH AZIZ",
+    "alamatMitra": "JL. TANAH SEREAL XVIII NO. 18 C"
+  },
+  {
+    "namaMitra": "musrifah yudiati",
+    "alamatMitra": "Jl. Anggrek Garuda Vc  no.75"
+  },
+  {
+    "namaMitra": "Aden suparman",
+    "alamatMitra": "Jl kav PTB"
+  },
+  {
+    "namaMitra": "Mohammad Ridwan",
+    "alamatMitra": "Cengkareng Barat"
+  },
+  {
+    "namaMitra": "Laina Rohidin",
+    "alamatMitra": "Jl marga jaya rt 006 RW 03 no.40k"
+  },
+  {
+    "namaMitra": "Herni yuliawati",
+    "alamatMitra": "Jl.mawar 1 no 30 RT 07 RW 09"
+  },
+  {
+    "namaMitra": "Nurul isnaini",
+    "alamatMitra": "Jl peta utara kp maja rt 005 rw 002"
+  },
+  {
+    "namaMitra": "Endang",
+    "alamatMitra": "Pegadungan"
+  },
+  {
+    "namaMitra": "Muhammad Sayyid Syafiq",
+    "alamatMitra": "Kotabambu Selatan"
+  },
+  {
+    "namaMitra": "TANTRI NURJANAH",
+    "alamatMitra": "Wijaya Kesuma"
+  },
+  {
+    "namaMitra": "Kasmawati",
+    "alamatMitra": "Jln.Kunir II Dalam"
+  },
+  {
+    "namaMitra": "Noviawan akhmad tabrani",
+    "alamatMitra": "Jl. Masjid II NO. 29 RT006/002"
+  },
+  {
+    "namaMitra": "SITI HADIJAH",
+    "alamatMitra": "Cengkareng Barat"
+  },
+  {
+    "namaMitra": "Dwi winarti",
+    "alamatMitra": "Kp.kalimati RT 13 RW 03"
+  },
+  {
+    "namaMitra": "Titik Iryanti",
+    "alamatMitra": "Kedaung Kali Angke"
+  },
+  {
+    "namaMitra": "MUIS",
+    "alamatMitra": "Jalan. Tanah Sereal Bukit I Rt.002 Rw.014 No.18"
+  },
+  {
+    "namaMitra": "SUSI SURYANTI",
+    "alamatMitra": "Jelambar"
+  },
+  {
+    "namaMitra": "SANIYAH",
+    "alamatMitra": "Jalan kapuk kamal rawa melati RT 006/001"
+  },
+  {
+    "namaMitra": "Untung sugiarto",
+    "alamatMitra": "Jl. Manyar Dalam Rt 002/015 Kel. Tegal Alur kec. Kali Deres jakarta barat"
+  },
+  {
+    "namaMitra": "Aspilah",
+    "alamatMitra": "Jakarta"
+  },
+  {
+    "namaMitra": "Maat syahputra",
+    "alamatMitra": "Jl gaga rawa kompeni rt 002/04"
+  },
+  {
+    "namaMitra": "Maryadi",
+    "alamatMitra": "Jl.manyar dalam RT005/015 Tegal alur Kalideres"
+  },
+  {
+    "namaMitra": "ISTI KOYIMAH",
+    "alamatMitra": "Tanah sereal"
+  },
+  {
+    "namaMitra": "Manah junaenah",
+    "alamatMitra": "Jalan Tambora mesjid no 5a rt003 rw 004"
+  },
+  {
+    "namaMitra": "masriah",
+    "alamatMitra": "jl kp bebek rt 12 rw 05 no 26"
+  },
+  {
+    "namaMitra": "Diana Ulfah",
+    "alamatMitra": "Jl. Pengukiran II No. 10 RT. 04 RW. 04"
+  },
+  {
+    "namaMitra": "HAERFEMI",
+    "alamatMitra": "Jl Tanah Sereal XIV RT 4 RW 10 No.5"
+  },
+  {
+    "namaMitra": "Eva aulia",
+    "alamatMitra": "Jl.pejagalan v no.7a rt.012 rw.03"
+  },
+  {
+    "namaMitra": "Harlita ba'daria",
+    "alamatMitra": "JL.Jembatan besi 1 no:54 RT.005 RW.002"
+  },
+  {
+    "namaMitra": "Muhammad Suwardi",
+    "alamatMitra": "Jl. Dr Semeru Raya No 15 RT 009/010"
+  },
+  {
+    "namaMitra": "Sari Utrujah",
+    "alamatMitra": "jl hj Marzuki rt 05 03 no 44"
+  },
+  {
+    "namaMitra": "Rina kusumawati",
+    "alamatMitra": "Tanjung Duren Selatan"
+  },
+  {
+    "namaMitra": "AMELIA SARI",
+    "alamatMitra": "Jl. Palapa 1 No. 34 Rt. 014 Rw. 001"
+  },
+  {
+    "namaMitra": "Nurasiah",
+    "alamatMitra": "Kebon Jeruk"
+  },
+  {
+    "namaMitra": "Sutarti Endarwati",
+    "alamatMitra": "Jalan lingkungan 3 RT.2 RW 9"
+  },
+  {
+    "namaMitra": "Ersian kurniadi",
+    "alamatMitra": "Jalan Pala No. 56 RT 004/05"
+  },
+  {
+    "namaMitra": "Ichsan aprianto",
+    "alamatMitra": "Jl kebon jeruk XII no 106"
+  },
+  {
+    "namaMitra": "VILIANY",
+    "alamatMitra": "JL KEMENANGAN NO 116A"
+  },
+  {
+    "namaMitra": "PANJI PRAMONO",
+    "alamatMitra": "Jalan Flamboyan"
+  },
+  {
+    "namaMitra": "Herniek Candra Sari",
+    "alamatMitra": "Komplek Yonhub Mabad Rt 008 Rw 04 Kel.Kelapa Dua, Kec.Kebon Jeruk Jakarta Barat"
+  },
+  {
+    "namaMitra": "ACHMAD YANI",
+    "alamatMitra": "Gg. Manggis XXI No. 14 RT 012 RW 004"
+  },
+  {
+    "namaMitra": "Sardianah",
+    "alamatMitra": "Jalan DUKU no.10B Rt003/Rw003"
+  },
+  {
+    "namaMitra": "Bunyanah",
+    "alamatMitra": "Jl labu no 56 RT 003/005"
+  },
+  {
+    "namaMitra": "Isa Achirudin",
+    "alamatMitra": "Jl.keadilan dalam 1 no.11 Rt 002/002 no.11"
+  },
+  {
+    "namaMitra": "Agus Lamran",
+    "alamatMitra": "Jl. Lingkungan 3 Rt.011/03 No.20"
+  },
+  {
+    "namaMitra": "IRWANTO",
+    "alamatMitra": "Cengkareng Timur"
+  },
+  {
+    "namaMitra": "Masnih",
+    "alamatMitra": "Jl. H. Merin Rt. 003 RW. 004 No. 2"
+  },
+  {
+    "namaMitra": "Vini vinola karmeyla",
+    "alamatMitra": "Komplek pemadam kebakaran, jl. kenanga no. 34 rt 009/002"
+  },
+  {
+    "namaMitra": "Lutfi Elwinsyah",
+    "alamatMitra": "Kp. Sanggrahan Rt001 RW06"
+  },
+  {
+    "namaMitra": "Tri sunarno",
+    "alamatMitra": "Kemanggisan pulo 1 Rt.003 Rw.003 No.29"
+  },
+  {
+    "namaMitra": "mujinah",
+    "alamatMitra": "Jl.  Padamulya IX RT.007/RW.09 No.6"
+  },
+  {
+    "namaMitra": "Jumroni",
+    "alamatMitra": "Jalan Gg.Siaga 2 No.26 RT.012 RW.04"
+  },
+  {
+    "namaMitra": "SITI JUBAEDAH",
+    "alamatMitra": "Pegadungan"
+  },
+  {
+    "namaMitra": "Suhendrik",
+    "alamatMitra": "Jl.Tanjung pura llprepet Rt.07/04"
+  },
+  {
+    "namaMitra": "Rahmawati",
+    "alamatMitra": "Jl Flamboyan no 40a RT 004/05 kebon jeruk"
+  },
+  {
+    "namaMitra": "Eli",
+    "alamatMitra": "Jl. H. Tohir Rt 02/04 Sukabumi Selatan Kebon Jeruk"
+  },
+  {
+    "namaMitra": "Fariihah",
+    "alamatMitra": "Jalan kampung pluis no 91 RT 004/014"
+  },
+  {
+    "namaMitra": "Daru nugroho",
+    "alamatMitra": "Jl inspeksi kali grogol rt 005/04"
+  },
+  {
+    "namaMitra": "SULFI SAPRI",
+    "alamatMitra": "Palmerah"
+  },
+  {
+    "namaMitra": "Mujahidin",
+    "alamatMitra": "Palmerah"
+  },
+  {
+    "namaMitra": "SURYANINGSIH",
+    "alamatMitra": "JEMBATAN LIMA"
+  },
+  {
+    "namaMitra": "SITI SYAROH RIYAH",
+    "alamatMitra": "Jalan Madrasah II RT.005 RW.002 No.18 A Kel. Sukabumi Utara Kec. Kebon Jeruk Jakarta Barat 11540"
+  },
+  {
+    "namaMitra": "Dini Maryani",
+    "alamatMitra": "Sukabumi Utara"
+  },
+  {
+    "namaMitra": "Saidah indrayana",
+    "alamatMitra": "Jl prepet Jaya rt011 RW 04"
+  },
+  {
+    "namaMitra": "Dina Revita",
+    "alamatMitra": "Jl H Basir RT 02 RW 02 No 28A"
+  },
+  {
+    "namaMitra": "Muhammad Rizky Fanidhia Raihan",
+    "alamatMitra": "Kotabambu Selatan"
+  },
+  {
+    "namaMitra": "Putri Dwi Lestari",
+    "alamatMitra": "Jalan Gaga rawa kompeni RT.008/004"
+  },
+  {
+    "namaMitra": "Selamat Rahman",
+    "alamatMitra": "Jl. Raya joglo"
+  },
+  {
+    "namaMitra": "Rakhmat Hendriawan",
+    "alamatMitra": "Jalan Prabu Kian Santang No 28 Rt 001/001"
+  },
+  {
+    "namaMitra": "DIANAH",
+    "alamatMitra": "JL KEMURNIAN IV NO 54 dlm"
+  },
+  {
+    "namaMitra": "Waisul Quroni",
+    "alamatMitra": "Kp. Pinggir Rawa Rt 03 Rw 04"
+  },
+  {
+    "namaMitra": "Dwi aprilia lestari",
+    "alamatMitra": "Pedongkelan"
+  },
+  {
+    "namaMitra": "Ratna sari",
+    "alamatMitra": "Jalan kali anyar"
+  },
+  {
+    "namaMitra": "Evi",
+    "alamatMitra": "Jatipulo"
+  },
+  {
+    "namaMitra": "Mega Anggraeni",
+    "alamatMitra": "Jl.KH ABDUL HAMID 1 NO.83 RT003/003 DURIKOSAMBI CENGKARENG JAKARTA BARAT"
+  },
+  {
+    "namaMitra": "Rohayah",
+    "alamatMitra": "JEMBATAN BESI"
+  },
+  {
+    "namaMitra": "Purwaningsih",
+    "alamatMitra": "Jl Karya Sakti RT 10 RW 03 Srengseng Kembangan Jak Bar"
+  },
+  {
+    "namaMitra": "Juhenny",
+    "alamatMitra": "Jl. Laksa III Rt.011 Rw.02 No.74"
+  },
+  {
+    "namaMitra": "Nurmala Dewi",
+    "alamatMitra": "Kp. Karang mulya"
+  },
+  {
+    "namaMitra": "Suwarni",
+    "alamatMitra": "Jl.prepedan rt 010 rw 009"
+  },
+  {
+    "namaMitra": "BUDI YANTI",
+    "alamatMitra": "DURI SELATAN"
+  },
+  {
+    "namaMitra": "Syafiih",
+    "alamatMitra": "Jl. Palapa 1 No.40 RT 001 RW 001"
+  },
+  {
+    "namaMitra": "Naseri B Moh Nur",
+    "alamatMitra": "Jalan H. Lebar Rt 001 Rw 001 no. 6B"
+  },
+  {
+    "namaMitra": "AJIS GOJALI",
+    "alamatMitra": "Kav DKI Jl. Penyelesaian Tomang 1 RT 003 RW 001"
+  },
+  {
+    "namaMitra": "BARBARA ZIPORA REVECHELLA",
+    "alamatMitra": "Cengkareng Timur"
+  },
+  {
+    "namaMitra": "Mulyani",
+    "alamatMitra": "Kecamatan Taman Sari"
+  },
+  {
+    "namaMitra": "Muhammad Ilyas Albani",
+    "alamatMitra": "JL GEDE RAYA NO 36 RT 002/019"
+  },
+  {
+    "namaMitra": "Juju Jubaedah",
+    "alamatMitra": "Kp. Kali mati rt 016 Rw 003"
+  },
+  {
+    "namaMitra": "Nasrudin",
+    "alamatMitra": "Kebon Jeruk"
+  },
+  {
+    "namaMitra": "Sartika",
+    "alamatMitra": "Kemanggisan pulo rt 002/017"
+  },
+  {
+    "namaMitra": "eva alpha zaujah",
+    "alamatMitra": "jalan ks tubun 4 rt 008 rw 005 no 28"
+  },
+  {
+    "namaMitra": "TIHAROH SEPTYA",
+    "alamatMitra": "Jl.sanggrahan Puri indah RT 001 RW 006"
+  },
+  {
+    "namaMitra": "Makmur",
+    "alamatMitra": "Jalan peta barat kp. Baru jaya"
+  },
+  {
+    "namaMitra": "Magsusi mahri",
+    "alamatMitra": "Jl kumbang rt 11 rw 01"
+  },
+  {
+    "namaMitra": "Muniroh",
+    "alamatMitra": "Jalan peta utara kp maja rt 005 rw 002"
+  },
+  {
+    "namaMitra": "Ricky senjaya",
+    "alamatMitra": "Jalan PTB Angke Pesing"
+  },
+  {
+    "namaMitra": "Nia Kurnia",
+    "alamatMitra": "Jln. Empang Bahagia Gg. 4 Rt. 001 RW 06"
+  },
+  {
+    "namaMitra": "Ani rohayati",
+    "alamatMitra": "Jln Bugis utama rt 004/003"
+  },
+  {
+    "namaMitra": "Jamiah ramadhani",
+    "alamatMitra": "Jl.karyawan lll  R 001 Rw 007"
+  },
+  {
+    "namaMitra": "Yati",
+    "alamatMitra": "Jl. Mangga 27 Blok J No. 280 Rt 005 Rw 003"
+  },
+  {
+    "namaMitra": "Fitriah",
+    "alamatMitra": "Jl.pasar Minggu kembangan GG. Chober"
+  },
+  {
+    "namaMitra": "Evi Yulianti s.kom",
+    "alamatMitra": "kp Bugis RT 006/03"
+  },
+  {
+    "namaMitra": "Yuliana",
+    "alamatMitra": "Jl mushollah RT 04 RW 08"
+  },
+  {
+    "namaMitra": "Fadlu Thamam Ahda",
+    "alamatMitra": "ROA MALAKA"
+  },
+  {
+    "namaMitra": "JENUR HADITIA SAPUTRA",
+    "alamatMitra": "Jalan Duri bangkit RT 03 RW 08"
+  },
+  {
+    "namaMitra": "Rina Yuliani",
+    "alamatMitra": "Jl. Kalianyar RT.007/03"
+  },
+  {
+    "namaMitra": "Deni hindriyani",
+    "alamatMitra": "Jl tambora III rt 005/06 no 7"
+  },
+  {
+    "namaMitra": "Ricky Rino Riyadi",
+    "alamatMitra": "cengkareng barat"
+  },
+  {
+    "namaMitra": "Devi Larassaty",
+    "alamatMitra": "Jln kapuk kebon jahe rt 12 003"
+  },
+  {
+    "namaMitra": "Rosyidah",
+    "alamatMitra": "Jl kp Bugis"
+  },
+  {
+    "namaMitra": "Nulita",
+    "alamatMitra": "Jalan G rt005/03 no. 6"
+  },
+  {
+    "namaMitra": "yusra Sobirin",
+    "alamatMitra": "Jalan bangun Nusa 1 RT 002 RW 002"
+  },
+  {
+    "namaMitra": "Nanda Aprilia",
+    "alamatMitra": "Jl Rawa Bengkel Rt.014"
+  },
+  {
+    "namaMitra": "Neni supriani",
+    "alamatMitra": "Jl. Kejayaan belakang No.79A Rt 008/01"
+  },
+  {
+    "namaMitra": "Amalia sari",
+    "alamatMitra": "KALIANYAR"
+  },
+  {
+    "namaMitra": "Davida suwardhani",
+    "alamatMitra": "Jalan penyelesain tomang 1 rt 001/rw001 meruya utara"
+  },
+  {
+    "namaMitra": "Hamdah",
+    "alamatMitra": "Kp. Sanggrahan rt 003/03 no. 35 meruya utara kembangan jakarta barat 11620"
+  },
+  {
+    "namaMitra": "Aditya Dean Permana",
+    "alamatMitra": "Jalan Daan Mogot KM 18 Kp. Asem RT 006/05 No. 31"
+  },
+  {
+    "namaMitra": "Masamah",
+    "alamatMitra": "Jl. Raya Joglo"
+  },
+  {
+    "namaMitra": "Muhammad Taufik",
+    "alamatMitra": "Jl krendang barat"
+  },
+  {
+    "namaMitra": "Merryani santika dini",
+    "alamatMitra": "Kp. Bugis"
+  },
+  {
+    "namaMitra": "KIKI APRIYAWATI",
+    "alamatMitra": "Jl.komp joglo baru RT 05 RW 06"
+  },
+  {
+    "namaMitra": "INDRIYASTUTI",
+    "alamatMitra": "Jln. Jaya 5"
+  },
+  {
+    "namaMitra": "Dedi lantina wibowo",
+    "alamatMitra": "jl.kapuk raya RT 002/011"
+  },
+  {
+    "namaMitra": "Yunita",
+    "alamatMitra": "Kp. Rawalele rt 004 rw 10"
+  },
+  {
+    "namaMitra": "Loma Fairy Rohmawati",
+    "alamatMitra": "Jalan anggrek rosliana iv no 21"
+  },
+  {
+    "namaMitra": "Usih Perwanti",
+    "alamatMitra": "Jl jaya 25 Rt 003/10"
+  },
+  {
+    "namaMitra": "Susiana",
+    "alamatMitra": "Jalan Jelambar Baru III No.43"
+  },
+  {
+    "namaMitra": "Elfrida Erna Lucia P",
+    "alamatMitra": "Jl. Mangga Raya No.3 Rt 005 Rw 003"
+  },
+  {
+    "namaMitra": "Oki Rosita Dewi",
+    "alamatMitra": "Jl alpukat 9 no 6 RT 11 RW 02"
+  },
+  {
+    "namaMitra": "Indriani",
+    "alamatMitra": "Jl.keutamaan dalam no.15 rt09 rw04"
+  },
+  {
+    "namaMitra": "Muhammad Ansori",
+    "alamatMitra": "Jl. Kesejahteraan no 25 RT014/008"
+  },
+  {
+    "namaMitra": "Dariyanti",
+    "alamatMitra": "Jl Pesing koneng RT.001/002"
+  },
+  {
+    "namaMitra": "Sutarti",
+    "alamatMitra": "Dki"
+  },
+  {
+    "namaMitra": "Hayatun nufus",
+    "alamatMitra": "Jl. Kiara dalam RT 013 RW 005"
+  },
+  {
+    "namaMitra": "Fatmiwapi",
+    "alamatMitra": "Tomang Tinggi XIX no 12 RT 01 RW 07 Tomang"
+  },
+  {
+    "namaMitra": "Zaidah Siti",
+    "alamatMitra": "Jln. Pulo Indah VII RT 08 RW 08"
+  },
+  {
+    "namaMitra": "Indriyani",
+    "alamatMitra": "Jl Pesing garden RT 03 RW 08"
+  },
+  {
+    "namaMitra": "Dewi kartika sari",
+    "alamatMitra": "Jl. Utan bahagia rt 02 rw 05"
+  },
+  {
+    "namaMitra": "Nur Aidah",
+    "alamatMitra": "JL KEMENANGAN V GG I NO 9 RT 03/03"
+  },
+  {
+    "namaMitra": "ika hartika",
+    "alamatMitra": "kp Duri Bulak Rt 10 rw 01"
+  },
+  {
+    "namaMitra": "MUHAMMAD DANI ALVIANSYAH",
+    "alamatMitra": "jl kota bambu selatan 2 rt 003 rw 005 no.6"
+  },
+  {
+    "namaMitra": "Mardiyana",
+    "alamatMitra": "Gg songsi dalam RT 003 RW 006"
+  },
+  {
+    "namaMitra": "itta merdeka wati",
+    "alamatMitra": "Jl. B1 rt. 9/08 no. 24"
+  },
+  {
+    "namaMitra": "Supartini",
+    "alamatMitra": "Jl. E Kelapa Dua No. 19 Rt. 002/03"
+  },
+  {
+    "namaMitra": "Wildan Al Rasyid",
+    "alamatMitra": "Jalan lingkungan 3 Rt013/003"
+  },
+  {
+    "namaMitra": "Abiyoga Daeng Pratama",
+    "alamatMitra": "Jalan kapuk kamal kayu besar rt 03/08"
+  },
+  {
+    "namaMitra": "Nuraini",
+    "alamatMitra": "Jalan menvo 5 RT007 RW010"
+  },
+  {
+    "namaMitra": "Fetty Fatimah",
+    "alamatMitra": "DURI SELATAN"
+  },
+  {
+    "namaMitra": "Neneng Risyanti",
+    "alamatMitra": "Jl. Rusun Tambora blok C"
+  },
+  {
+    "namaMitra": "Muhammad Rifai",
+    "alamatMitra": "Jalan Cemara V"
+  },
+  {
+    "namaMitra": "Ken rahma wijayanti",
+    "alamatMitra": "Jl Tawakal Ujung I no. B13"
+  },
+  {
+    "namaMitra": "Supian",
+    "alamatMitra": "Jl Kedoya pintu air RT 005 RW 05"
+  },
+  {
+    "namaMitra": "Nawan akhiri",
+    "alamatMitra": "Komplek Unilever karang mulya"
+  },
+  {
+    "namaMitra": "PRIYATNA AGUS",
+    "alamatMitra": "Palmerah"
+  },
+  {
+    "namaMitra": "NOOR FAUZY",
+    "alamatMitra": "JL. TALI I NO.31 RT 4 RW 8"
+  },
+  {
+    "namaMitra": "Tarmudi bin SARKIM",
+    "alamatMitra": "Jl kalianyar 3 RT 008 RW 01 no 13"
+  },
+  {
+    "namaMitra": "Mohamad eko fahrawi",
+    "alamatMitra": "Jl. Suka jaya 1. No. 25 Rt 008/01"
+  },
+  {
+    "namaMitra": "SADI",
+    "alamatMitra": "Jl. Jelambar Jaya II Gg. R No. 19 Rt 005 Rw 002"
+  },
+  {
+    "namaMitra": "PUTIH ASMARI",
+    "alamatMitra": "JL H KASAM II RT 003 RW 008 NO 21"
+  },
+  {
+    "namaMitra": "Riri Sulastri",
+    "alamatMitra": "Jln Jelambar utama 4 No 67 RT 01 Rw 08"
+  },
+  {
+    "namaMitra": "SITI SUGINI",
+    "alamatMitra": "JL KAMPUNG KRENDANG BARU"
+  },
+  {
+    "namaMitra": "Sri lichayati",
+    "alamatMitra": "Jl. Kapuk raya, RT 001/011"
+  },
+  {
+    "namaMitra": "Nunung Nurul Afiah",
+    "alamatMitra": "Jalan Krendang Timur Gang 4 Rt 011 Rw 001 No. 18"
+  },
+  {
+    "namaMitra": "Cezia Angelica Malubala",
+    "alamatMitra": "Jalan Salak Barat 4 no 11 Rt012/05"
+  },
+  {
+    "namaMitra": "AYU SURYANTI",
+    "alamatMitra": "Jl pesing garde blok VI rt 001 rw 008 no.63"
+  },
+  {
+    "namaMitra": "Imam muntako",
+    "alamatMitra": "Jl.kebon jeruk raya rt006/001 no 34"
+  },
+  {
+    "namaMitra": "Dicky Maulana",
+    "alamatMitra": "Kp. Sinar Kedaung RT 008 RW03 No.21"
+  },
+  {
+    "namaMitra": "Munawaroh",
+    "alamatMitra": "Komplek polri"
+  },
+  {
+    "namaMitra": "Romlah",
+    "alamatMitra": "Menceng komplek"
+  },
+  {
+    "namaMitra": "Suci Astuti",
+    "alamatMitra": "JL. INDUSTRI III Dalam RT. 003 RW. 014 No. 20"
+  },
+  {
+    "namaMitra": "Eis Mutiarani",
+    "alamatMitra": "Jl.Thalib II no.20 RT009/05 kel.Krukut Tamansari"
+  },
+  {
+    "namaMitra": "Nurjanah",
+    "alamatMitra": "Jl.kumbang raya rawa lele rt 012"
+  },
+  {
+    "namaMitra": "SUTJIPTO",
+    "alamatMitra": "Jl. Kapuk Rt, 15 Rw, 12"
+  },
+  {
+    "namaMitra": "Juhaeriah",
+    "alamatMitra": "Jl.jaya VIII RT07 RW09 no.63"
+  },
+  {
+    "namaMitra": "YENI SUYANI",
+    "alamatMitra": "Jalan Joglo raya RT 006 RW 002"
+  },
+  {
+    "namaMitra": "Siti Wahyuni",
+    "alamatMitra": "Kayu Besar RT 07/12 No 171 Tegal Alur Kalideres Jakarta Barat"
+  },
+  {
+    "namaMitra": "NAURA ATHIRA BALQIS",
+    "alamatMitra": "Jl.perintis 2 no.15 rt002/05"
+  },
+  {
+    "namaMitra": "Sherina Handa Ismi Ade Lia Putri",
+    "alamatMitra": "Jalan Kelurahan Pinang No. 40 RT.004/RW.001"
+  },
+  {
+    "namaMitra": "Nunuk Rohana",
+    "alamatMitra": "Kp. Pulo RT. 007/RW. 008"
+  },
+  {
+    "namaMitra": "NENY KUSUMAWATI",
+    "alamatMitra": "Jalan KH Moh Rais Poncol"
+  },
+  {
+    "namaMitra": "Fanie Restiana",
+    "alamatMitra": "Kp.gusti rt 9/05 no.26"
+  },
+  {
+    "namaMitra": "NENENG MURTAPIAH",
+    "alamatMitra": "Jl PULO HARAPAN INDAH RT 008 RW 010"
+  },
+  {
+    "namaMitra": "Wahyu Fadillah",
+    "alamatMitra": "Jl. Terate No. 3"
+  },
+  {
+    "namaMitra": "Dewi Lindiawati",
+    "alamatMitra": "Jl.Kp Gunung Al Falah ll"
+  },
+  {
+    "namaMitra": "Puspita Sari",
+    "alamatMitra": "Rusunawa Pesakih Daan Mogot Tower 1 Lantai 15 Nomor 17"
+  },
+  {
+    "namaMitra": "Tresnawati",
+    "alamatMitra": "Jl. Kp. Janis No. 5 RT. 003/008"
+  },
+  {
+    "namaMitra": "Pasu Lenny Marlina Tampubolon",
+    "alamatMitra": "Jln delta barat 7 rt 2/7 B-45 Pekayon jaya, Bekasi"
+  },
+  {
+    "namaMitra": "Yayan Royani",
+    "alamatMitra": "Kapuk Rt 003 Rw 011 Kel.Kapuk Kec.Cengkareng Jak Bar"
+  },
+  {
+    "namaMitra": "Sidan",
+    "alamatMitra": "Tegal Alur/Kamal"
+  },
+  {
+    "namaMitra": "Neng Juju",
+    "alamatMitra": "Jl.Jembatan Besi II RT 008 RW 01 No:22"
+  },
+  {
+    "namaMitra": "jamaludin k",
+    "alamatMitra": "Kp.Pinggir Rawa RT.003 RW.004"
+  },
+  {
+    "namaMitra": "Tri ratna susanti",
+    "alamatMitra": "Jl pedongkelan no 123 rt 01 rw 013"
+  },
+  {
+    "namaMitra": "Bayu widiyanto",
+    "alamatMitra": "Jl jaya 24 rt 05 rw 010"
+  },
+  {
+    "namaMitra": "Kintan Marchia Ibrahim",
+    "alamatMitra": "Jl. Mangga Besar IVh/19P"
+  },
+  {
+    "namaMitra": "Dina Aryani",
+    "alamatMitra": "Jl.Dahlia IV Blok AA no 4 RT 02/09"
+  },
+  {
+    "namaMitra": "Nurhayati",
+    "alamatMitra": "Jl.Raya kresek kp.gunung Al Falah2 no.60 Rt.005 Rw.008"
+  },
+  {
+    "namaMitra": "Muhammad Gerhan",
+    "alamatMitra": "Cibubur"
+  },
+  {
+    "namaMitra": "Evi Yanti",
+    "alamatMitra": "Jl. Tomang Tinggi IX No. 9 RT 010 RW 07"
+  },
+  {
+    "namaMitra": "Silvia Lisnasari",
+    "alamatMitra": "Jatipulo"
+  },
+  {
+    "namaMitra": "KARELONA",
+    "alamatMitra": "Cengkareng Barat"
+  },
+  {
+    "namaMitra": "Hesti wiriyanti",
+    "alamatMitra": "Jl. Rawalele Rt 002 rw 010"
+  },
+  {
+    "namaMitra": "Hj. Sri Wahyuni",
+    "alamatMitra": "Kp.Asem Rt.06 Rw.05"
+  },
+  {
+    "namaMitra": "NURUL PRASETYANI",
+    "alamatMitra": "JL. PESING GARDEN RT 001 RW 08 NO. 15"
+  },
+  {
+    "namaMitra": "Iwan purwanto",
+    "alamatMitra": "Jl jati Rt 11 Rw 13 no. 84"
+  },
+  {
+    "namaMitra": "Ahmad jumrony",
+    "alamatMitra": "Jl.angke indah gg.1 no.14 rt.006/03"
+  },
+  {
+    "namaMitra": "Irwanto",
+    "alamatMitra": "Cengkareng Timur"
+  },
+  {
+    "namaMitra": "Eva Dwi Agustini",
+    "alamatMitra": "Jl. Angke jaya I"
+  },
+  {
+    "namaMitra": "Ombo surya sanjaya",
+    "alamatMitra": "Jl.H Merin no.1 Rt 003 Rw 04 Meruya selatan"
+  },
+  {
+    "namaMitra": "Sanan",
+    "alamatMitra": "Jl.kapuk raya rt 001/rw 012 jakarta barat"
+  },
+  {
+    "namaMitra": "Siska Ariyani",
+    "alamatMitra": "Jl.duri utara raya gg.2 no.22"
+  },
+  {
+    "namaMitra": "Makmur utomo",
+    "alamatMitra": "Kp. Klingkit rt 001/012"
+  },
+  {
+    "namaMitra": "Endang Puji Winarti",
+    "alamatMitra": "Jln. Bandengan Utara II no.7,RT 013,RW 011."
+  },
+  {
+    "namaMitra": "Virna Silvia",
+    "alamatMitra": "Jl anggrek rosliana F2 no 25"
+  },
+  {
+    "namaMitra": "Agung Dion Rubianto",
+    "alamatMitra": ""
+  }
+]
+
+}
+
+
