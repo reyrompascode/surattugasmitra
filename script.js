@@ -385,7 +385,7 @@ function addRow() {
 
     <td>
       <div class="button-group">
-        <button type="button" class="export-btn">Ekspor ST</button>
+        <button type="button" class="export-btn">Ekspor</button>
         <button type="button" class="delete-row-btn reset-button">Reset</button>
       </div>
     </td>`;
@@ -865,3 +865,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 });
+
