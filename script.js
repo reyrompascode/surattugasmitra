@@ -8,11 +8,28 @@ const logoBase64String =
 
 let dataMitra = []; // akan diisi dari mitra.json
 
+// <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
+// Definisikan nilai default untuk kolom Tempat
+const defaultTempat = "Kota Jakarta Barat";
+
 // Format tanggal ke bentuk “15 Oktober 2025”
 function formatTanggalPendek(dateStr) {
   if (!dateStr) return "-";
   const d = new Date(dateStr + "T00:00:00");
-  const bulanMap = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+  const bulanMap = [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember",
+  ];
   if (isNaN(d.getTime())) return dateStr;
   return `${d.getDate()} ${bulanMap[d.getMonth()]} ${d.getFullYear()}`;
 }
@@ -34,6 +51,10 @@ function toTitleCase(str) {
 function generateSuratTugas(doc, data) {
   doc.setFont("times", "normal");
 
+  // Sesuaikan posisi Y awal agar teks tidak menabrak logo
+  let y = 30;
+  const lineHeight = 5;
+
   // ==========================================================
   // PERBAIKAN LOGO: MENDAPATKAN PROPERTI ASLI UNTUK RASIO
   // ==========================================================
@@ -41,7 +62,9 @@ function generateSuratTugas(doc, data) {
   // Jika logoBase64String TIDAK VALID atau kosong, logoProps akan undifined.
   // Tambahkan pemeriksaan sederhana untuk mencegah error:
   if (!logoProps) {
-    console.error("Gagal mendapatkan properti gambar. Pastikan logoBase64String sudah diisi dengan Base64 yang valid.");
+    console.error(
+      "Gagal mendapatkan properti gambar. Pastikan logoBase64String sudah diisi dengan Base64 yang valid."
+    );
     // Lanjutkan eksekusi tanpa logo, atau hentikan jika logo wajib
     // return;
   }
@@ -59,12 +82,14 @@ function generateSuratTugas(doc, data) {
   const displayWidthMM = originalWidth * scale;
   const displayHeightMM = originalHeight * scale; // Tambahkan logo ke PDF // doc.addImage(imgData, format, x, y, width, height)
 
-  doc.addImage(logoBase64String, "PNG", 15, 12, displayWidthMM, displayHeightMM);
-
-  // Sesuaikan posisi Y awal agar teks tidak menabrak logo
-  let y = 30;
-  const lineHeight = 5;
-
+  doc.addImage(
+    logoBase64String,
+    "PNG",
+    15,
+    12,
+    displayWidthMM,
+    displayHeightMM
+  );
   // Judul
   doc.setFontSize(13);
   doc.setFont("times", "bold");
@@ -78,14 +103,16 @@ function generateSuratTugas(doc, data) {
 
   const marginLeft = 20;
   const marginBody = 45;
-  const maxWidthBody = 145;
+  const maxWidthBody = 138;
 
   // Menimbang
   doc.setFont("times", "normal");
   doc.text("Menimbang", marginLeft, y);
   doc.text(":", marginBody - 3, y);
   doc.text("a.", marginBody, y);
-  const menimbangA = `Bahwa dalam rangka kegiatan ${toTitleCase(data.namaKegiatan)} di lingkungan BPS Kota Jakarta Barat, maka dipandang perlu melakukan kegiatan tersebut.`;
+  const menimbangA = `Bahwa dalam rangka kegiatan ${toTitleCase(
+    data.namaKegiatan
+  )} di lingkungan BPS Kota Jakarta Barat, maka dipandang perlu melakukan kegiatan tersebut.`;
   const menimbangAText = doc.splitTextToSize(menimbangA, maxWidthBody);
   doc.text(":", marginBody - 3, y);
   doc.text(menimbangAText, marginBody + 4, y, {
@@ -159,7 +186,9 @@ function generateSuratTugas(doc, data) {
 
   // Untuk
   doc.text("Untuk", indentX, y);
-  const kegiatanText = `Melakukan Pendataan Lapangan dalam rangka ${toTitleCase(data.namaKegiatan)} yang dilaksanakan pada tanggal ${data.tanggalKegiatan}.`;
+  const kegiatanText = `Melakukan Pendataan Lapangan dalam rangka ${toTitleCase(
+    data.namaKegiatan
+  )} yang dilaksanakan pada tanggal ${data.tanggalKegiatan} di ${data.tempat}.`;
   const kegiatanTextLines = doc.splitTextToSize(kegiatanText, maxWidthBody);
   doc.text(":", separatorX1, y);
   doc.text(kegiatanTextLines, labelX, y, {
@@ -171,7 +200,12 @@ function generateSuratTugas(doc, data) {
   // Penutup
   let rightCenter = 165; // tengah kolom kanan
   let ttdY = y;
-  doc.text(`Jakarta, ${formatTanggalPendek(data.tanggalSurat)}`, rightCenter, ttdY, { align: "center" });
+  doc.text(
+    `Jakarta, ${formatTanggalPendek(data.tanggalSurat)}`,
+    rightCenter,
+    ttdY,
+    { align: "center" }
+  );
   ttdY += 5;
   doc.text("Kepala Badan Pusat Statistik", rightCenter, ttdY, {
     align: "center",
@@ -265,7 +299,9 @@ function setupDateValidation(row) {
       const hari = d.getDay();
 
       if (hari === 0 || hari === 6) {
-        alert("Tanggal Surat tidak boleh pada hari Sabtu atau Minggu (Hari libur kerja). Mohon pilih hari kerja.");
+        alert(
+          "Tanggal Surat tidak boleh pada hari Sabtu atau Minggu (Hari libur kerja). Mohon pilih hari kerja."
+        );
         this.value = ""; // Hapus nilai yang tidak valid
         updateTglMulaiConstraint(""); // Reset constraint Tgl Mulai
         return; // Hentikan pemrosesan constraint normal
@@ -305,7 +341,9 @@ function attachPasteListener(row) {
       if (names.length === 0) return;
 
       // Dapatkan semua baris yang ada dan indeks baris saat ini
-      const allRows = Array.from(document.querySelectorAll("#pegawai-list-body tr"));
+      const allRows = Array.from(
+        document.querySelectorAll("#pegawai-list-body tr")
+      );
       let currentRow = e.target.closest("tr");
       let currentRowIndex = allRows.indexOf(currentRow);
 
@@ -315,7 +353,9 @@ function attachPasteListener(row) {
 
         // Jika baris target SUDAH ADA di tabel
         if (targetRowIndex < allRows.length) {
-          const targetInput = allRows[targetRowIndex].querySelector('[name="namaMitra[]"]');
+          const targetInput = allRows[targetRowIndex].querySelector(
+            '[name="namaMitra[]"]'
+          );
           if (targetInput) {
             targetInput.value = toTitleCase(names[i]);
           }
@@ -324,7 +364,9 @@ function attachPasteListener(row) {
           addRow();
 
           // Ambil baris yang baru ditambahkan (baris terakhir)
-          const newRow = document.querySelector("#pegawai-list-body tr:last-child");
+          const newRow = document.querySelector(
+            "#pegawai-list-body tr:last-child"
+          );
           const targetInput = newRow.querySelector('[name="namaMitra[]"]');
 
           if (targetInput) {
@@ -348,6 +390,9 @@ function addRow() {
   const isFirstRow = tbody.children.length === 0; // Cek apakah tabel kosong
   const defaultJabatan = isFirstRow ? "Petugas Pendataan Lapangan" : "";
 
+  // LOGIKA BARU: Tentukan nilai default untuk Tempat (Hanya baris pertama)
+  const defaultTempatValue = isFirstRow ? defaultTempat : ""; // <<< MODIFIKASI DEFAULT TEMPAT: HANYA BARIS PERTAMA >>>
+
   const newRow = document.createElement("tr");
 
   newRow.innerHTML = `
@@ -366,7 +411,8 @@ function addRow() {
     <td><input type="text" name="namaMitra[]" list="list-mitra" placeholder="Cari/Ketik Nama"></td>
 
     <td><input type="text" name="jabatanMitra[]" value="${defaultJabatan}"></td>
-
+    <td><input type="text" name="tempat[]" value="${defaultTempatValue}"></td>
+    
     <td>
       <div class="button-group">
         <button type="button" class="export-btn">Ekspor</button>
@@ -392,7 +438,9 @@ function addRow() {
 // Ambil data dari baris tabel (termasuk format rentang tanggal)
 function getDataFromRow(row) {
   const tglMulai = row.querySelector('[name="tanggalKegiatanMulai[]"]').value;
-  const tglSelesai = row.querySelector('[name="tanggalKegiatanSelesai[]"]').value;
+  const tglSelesai = row.querySelector(
+    '[name="tanggalKegiatanSelesai[]"]'
+  ).value;
   let tanggalKegiatan;
 
   // Logika untuk menggabungkan tanggal:
@@ -409,7 +457,9 @@ function getDataFromRow(row) {
 
     if (bulanMulai === bulanSelesai) {
       // Bulan sama: 15 s.d 17 Oktober 2025
-      tanggalKegiatan = `${dateMulai.getDate()} s.d ${new Date(tglSelesai + "T00:00:00").getDate()} ${bulanSelesai} ${tahunSelesai}`;
+      tanggalKegiatan = `${dateMulai.getDate()} s.d ${new Date(
+        tglSelesai + "T00:00:00"
+      ).getDate()} ${bulanSelesai} ${tahunSelesai}`;
     } else {
       // Bulan berbeda: 28 September s.d 3 Oktober 2025
       tanggalKegiatan = `${tglMulaiFormatted} s.d ${tglSelesaiFormatted}`;
@@ -430,6 +480,7 @@ function getDataFromRow(row) {
     tanggalKegiatan: tanggalKegiatan,
     namaMitra: row.querySelector('[name="namaMitra[]"]').value,
     jabatanMitra: row.querySelector('[name="jabatanMitra[]"]').value,
+    tempat: row.querySelector('[name="tempat[]"]').value, // <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
     // Tambahkan raw date untuk validasi lebih lanjut jika diperlukan
     rawTglMulai: tglMulai,
     rawTglSelesai: tglSelesai,
@@ -439,7 +490,14 @@ function getDataFromRow(row) {
 
 // Validasi data (semua field wajib diisi + validasi baru)
 function validateData(data) {
-  const requiredFields = ["nomorSuratTugas", "tanggalSurat", "namaKegiatan", "namaMitra", "jabatanMitra"];
+  const requiredFields = [
+    "nomorSuratTugas",
+    "tanggalSurat",
+    "namaKegiatan",
+    "namaMitra",
+    "jabatanMitra",
+    "tempat", // <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
+  ];
   for (const field of requiredFields) {
     // Cek apakah field ada dan tidak kosong
     if (!data[field] || data[field].trim() === "") {
@@ -467,7 +525,8 @@ function validateData(data) {
     if (hari === 0 || hari === 6) {
       return {
         valid: false,
-        message: "Tanggal Surat tidak boleh pada hari Sabtu atau Minggu (Hari libur kerja).",
+        message:
+          "Tanggal Surat tidak boleh pada hari Sabtu atau Minggu (Hari libur kerja).",
       };
     }
   }
@@ -478,7 +537,8 @@ function validateData(data) {
   if (nomorSurat.includes(" ")) {
     return {
       valid: false,
-      message: "Nomor Surat tidak boleh mengandung spasi. Harap bersihkan Nomor Surat.",
+      message:
+        "Nomor Surat tidak boleh mengandung spasi. Harap bersihkan Nomor Surat.",
     };
   }
 
@@ -503,10 +563,15 @@ function validateData(data) {
         message: `Tahun pada Tanggal Surat (${tahunTanggalSurat}) harus sama dengan 4 digit terakhir Nomor Surat (${tahunNomorSurat}).`,
       };
     }
-  } else if (data.tanggalSurat && nomorSurat.length < 4 && nomorSurat.length > 0) {
+  } else if (
+    data.tanggalSurat &&
+    nomorSurat.length < 4 &&
+    nomorSurat.length > 0
+  ) {
     return {
       valid: false,
-      message: "Nomor Surat minimal harus memiliki 4 digit (tahun) untuk validasi.",
+      message:
+        "Nomor Surat minimal harus memiliki 4 digit (tahun) untuk validasi.",
     };
   }
 
@@ -525,7 +590,8 @@ function validateData(data) {
     if (new Date(data.rawTglMulai) > new Date(data.rawTglSelesai)) {
       return {
         valid: false,
-        message: "Tanggal Kegiatan Selesai tidak boleh mendahului Tanggal Kegiatan Mulai.",
+        message:
+          "Tanggal Kegiatan Selesai tidak boleh mendahului Tanggal Kegiatan Mulai.",
       };
     }
   }
@@ -558,7 +624,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("mitra.json");
     if (!response.ok) {
-      throw new Error(`Gagal memuat mitra.json: ${response.statusText || "File Not Found"}`);
+      throw new Error(
+        `Gagal memuat mitra.json: ${response.statusText || "File Not Found"}`
+      );
     }
     const data = await response.json();
     dataMitra = data.mitra || [];
@@ -580,7 +648,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   } catch (error) {
     console.error("Terjadi kesalahan fatal saat memuat data mitra:", error);
-    alert("Gagal memuat data mitra. Kolom Nama Mitra mungkin tidak memiliki saran (autocomplete).");
+    alert(
+      "Gagal memuat data mitra. Kolom Nama Mitra mungkin tidak memiliki saran (autocomplete)."
+    );
 
     // Tambah 5 Baris Awal meskipun gagal memuat data
     for (let i = 0; i < 5; i++) {
@@ -593,48 +663,69 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("add-row-button").addEventListener("click", addRow);
 
   // Hapus atau ekspor per baris (Logika Reset Isian)
-  document.getElementById("pegawai-list-body").addEventListener("click", (e) => {
-    const row = e.target.closest("tr");
+  document
+    .getElementById("pegawai-list-body")
+    .addEventListener("click", (e) => {
+      const row = e.target.closest("tr");
 
-    if (e.target.classList.contains("delete-row-btn")) {
-      if (confirm("Yakin ingin mengosongkan isian pada baris ini?")) {
-        const inputs = row.querySelectorAll('input[type="text"], input[type="date"]');
+      if (e.target.classList.contains("delete-row-btn")) {
+        if (confirm("Yakin ingin mengosongkan isian pada baris ini?")) {
+          const inputs = row.querySelectorAll(
+            'input[type="text"], input[type="date"]'
+          );
 
-        // Logika untuk menentukan indeks baris yang di-reset
-        const allRows = Array.from(document.querySelectorAll("#pegawai-list-body tr"));
-        const rowIndex = allRows.indexOf(row);
+          // Logika untuk menentukan indeks baris yang di-reset
+          const allRows = Array.from(
+            document.querySelectorAll("#pegawai-list-body tr")
+          );
+          const rowIndex = allRows.indexOf(row);
 
-        inputs.forEach((input) => {
-          // Mengosongkan nilai input
-          input.value = "";
+          inputs.forEach((input) => {
+            // Mengosongkan nilai input
+            input.value = "";
 
-          // Khusus untuk input tanggal, hapus atribut 'min'
-          if (input.type === "date") {
-            input.removeAttribute("min");
-          }
-
-          // Jika input adalah Jabatan Mitra
-          if (input.name === "jabatanMitra[]") {
-            // JIKA INI BARIS PERTAMA (INDEKS 0), KEMBALIKAN KE NILAI DEFAULT
-            if (rowIndex === 0) {
-              input.value = "Petugas Pendataan Lapangan";
+            // Khusus untuk input tanggal, hapus atribut 'min'
+            if (input.type === "date") {
+              input.removeAttribute("min");
             }
-            // Baris selain pertama akan dikosongkan (value="")
-          }
-        });
-        // Setelah reset, panggil lagi setupDateValidation untuk mengatur ulang batasan jika ada nilai dari baris lain yang berpengaruh
-        setupDateValidation(row);
-      }
-    }
 
-    if (e.target.classList.contains("export-btn")) {
-      exportToPDF(row);
-    }
-  });
+            // Jika input adalah Jabatan Mitra
+            if (input.name === "jabatanMitra[]") {
+              // JIKA INI BARIS PERTAMA (INDEKS 0), KEMBALIKAN KE NILAI DEFAULT
+              if (rowIndex === 0) {
+                input.value = "Petugas Pendataan Lapangan";
+              }
+              // Baris selain pertama akan dikosongkan (value="")
+            }
+
+            // <<< MODIFIKASI DEFAULT TEMPAT: HANYA BARIS PERTAMA >>>
+            // Jika input adalah Tempat
+            if (input.name === "tempat[]") {
+              // HANYA baris pertama (rowIndex === 0) yang mendapat nilai default.
+              if (rowIndex === 0) {
+                input.value = defaultTempat;
+              } else {
+                input.value = ""; // Baris selain pertama dikosongkan
+              }
+            }
+          });
+          // Setelah reset, panggil lagi setupDateValidation untuk mengatur ulang batasan jika ada nilai dari baris lain yang berpengaruh
+          setupDateValidation(row);
+        }
+      }
+
+      if (e.target.classList.contains("export-btn")) {
+        exportToPDF(row);
+      }
+    });
 
   // Tombol reset semua
   document.getElementById("reset-all-button").addEventListener("click", () => {
-    if (confirm("Yakin ingin menghapus semua data input dan membuat 5 baris baru?")) {
+    if (
+      confirm(
+        "Yakin ingin menghapus semua data input dan membuat 5 baris baru?"
+      )
+    ) {
       document.getElementById("pegawai-list-body").innerHTML = "";
       // Tambahkan kembali 5 baris setelah reset
       for (let i = 0; i < 5; i++) {
@@ -644,84 +735,97 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // Tombol ekspor semua (Memfilter baris yang terisi lengkap dan valid)
-  document.getElementById("export-pdf-button").addEventListener("click", async () => {
-    const rows = document.querySelectorAll("#pegawai-list-body tr");
-    if (rows.length === 0) {
-      alert("Tidak ada data untuk diekspor.");
-      return;
-    }
+  document
+    .getElementById("export-pdf-button")
+    .addEventListener("click", async () => {
+      const rows = document.querySelectorAll("#pegawai-list-body tr");
+      if (rows.length === 0) {
+        alert("Tidak ada data untuk diekspor.");
+        return;
+      }
 
-    const dataToExport = [];
+      const dataToExport = [];
 
-    // Definisikan field wajib (harus sama dengan yang ada di validateData)
-    const requiredFields = ["nomorSuratTugas", "tanggalSurat", "namaKegiatan", "namaMitra", "jabatanMitra"];
+      // Definisikan field wajib (harus sama dengan yang ada di validateData)
+      const requiredFields = [
+        "nomorSuratTugas",
+        "tanggalSurat",
+        "namaKegiatan",
+        "namaMitra",
+        "jabatanMitra",
+        "tempat", // <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
+      ];
 
-    // 1. Kumpulkan dan validasi data (Lewati baris kosong, ABAIKAN baris yang tidak valid)
-    for (const row of rows) {
-      const data = getDataFromRow(row);
-      let isRowEmpty = true; // Asumsikan baris kosong
+      // 1. Kumpulkan dan validasi data (Lewati baris kosong, ABAIKAN baris yang tidak valid)
+      for (const row of rows) {
+        const data = getDataFromRow(row);
+        let isRowEmpty = true; // Asumsikan baris kosong
 
-      // Bersihkan border merah (jika ada dari ekspor tunggal yang gagal)
-      row.style.border = "";
+        // Bersihkan border merah (jika ada dari ekspor tunggal yang gagal)
+        row.style.border = "";
 
-      // Cek apakah ada satupun field wajib yang terisi
-      for (const field of requiredFields) {
-        if (data[field] && data[field].trim() !== "") {
-          isRowEmpty = false;
-          break;
+        // Cek apakah ada satupun field wajib yang terisi
+        for (const field of requiredFields) {
+          if (data[field] && data[field].trim() !== "") {
+            isRowEmpty = false;
+            break;
+          }
         }
+
+        // --- LANGKAH 1: Lewati baris yang kosong sama sekali ---
+        if (isRowEmpty) {
+          continue;
+        }
+
+        // --- LANGKAH 2: Validasi baris yang terisi sebagian/penuh ---
+        const validationResult = validateData(data);
+
+        // --- LOGIKA PERBAIKAN UTAMA ---
+        if (!validationResult.valid) {
+          // JIKA TIDAK VALID (terisi sebagian/ada error data),
+          // MAKA ABAIKAN baris ini dan LANJUTKAN ke baris berikutnya.
+          // HAPUS alert() dan return!
+
+          // Opsional: berikan feedback visual pada baris yang diabaikan
+          // row.style.border = '2px dashed orange';
+          console.warn(
+            `Baris diabaikan (Tidak Valid/Tidak Lengkap): ${
+              data.namaMitra || data.nomorSuratTugas
+            }`
+          );
+          continue; // Lanjutkan ke baris berikutnya
+        }
+
+        // JIKA VALID, masukkan ke daftar ekspor
+        dataToExport.push(data);
+      }
+      // ------------------------------------
+
+      // 2. Cek apakah ada data yang valid untuk diekspor
+      if (dataToExport.length === 0) {
+        alert("Tidak ada baris yang terisi lengkap dan valid untuk diekspor.");
+        return;
       }
 
-      // --- LANGKAH 1: Lewati baris yang kosong sama sekali ---
-      if (isRowEmpty) {
-        continue;
+      // 3. Buat dan Ekspor PDF
+      const doc = new window.jspdf.jsPDF({ unit: "mm", format: "a4" });
+      doc.setFont("times", "normal");
+
+      let firstPage = true;
+      for (const data of dataToExport) {
+        if (!firstPage) doc.addPage();
+        generateSuratTugas(doc, data);
+        firstPage = false;
       }
 
-      // --- LANGKAH 2: Validasi baris yang terisi sebagian/penuh ---
-      const validationResult = validateData(data);
-
-      // --- LOGIKA PERBAIKAN UTAMA ---
-      if (!validationResult.valid) {
-        // JIKA TIDAK VALID (terisi sebagian/ada error data),
-        // MAKA ABAIKAN baris ini dan LANJUTKAN ke baris berikutnya.
-        // HAPUS alert() dan return!
-
-        // Opsional: berikan feedback visual pada baris yang diabaikan
-        // row.style.border = '2px dashed orange';
-        console.warn(`Baris diabaikan (Tidak Valid/Tidak Lengkap): ${data.namaMitra || data.nomorSuratTugas}`);
-        continue; // Lanjutkan ke baris berikutnya
-      }
-
-      // JIKA VALID, masukkan ke daftar ekspor
-      dataToExport.push(data);
-    }
-    // ------------------------------------
-
-    // 2. Cek apakah ada data yang valid untuk diekspor
-    if (dataToExport.length === 0) {
-      alert("Tidak ada baris yang terisi lengkap dan valid untuk diekspor.");
-      return;
-    }
-
-    // 3. Buat dan Ekspor PDF
-    const doc = new window.jspdf.jsPDF({ unit: "mm", format: "a4" });
-    doc.setFont("times", "normal");
-
-    let firstPage = true;
-    for (const data of dataToExport) {
-      if (!firstPage) doc.addPage();
-      generateSuratTugas(doc, data);
-      firstPage = false;
-    }
-
-    // Menggunakan output('dataurlnewwindow') untuk membuka di tab baru
-    doc.output("dataurlnewwindow");
-  });
-  // Tombol copy header (Nomor Surat, Tanggal, Kegiatan, Tanggal Kegiatan, JABATAN)
+      // Menggunakan output('dataurlnewwindow') untuk membuka di tab baru
+      doc.output("dataurlnewwindow");
+    });
+  // Tombol copy header (Nomor Surat, Tanggal, Kegiatan, Tanggal Kegiatan, JABATAN, TEMPAT)
   document.querySelectorAll('[id^="copy-"]').forEach((button) => {
     button.addEventListener("click", (e) => {
       const targetId = e.target.id;
-      const targetName = targetId.replace("copy-", "").replace("-btn", ""); // no-surat, tgl-surat, nama-kegiatan, tgl-kegiatan, jabatan-mitra
+      const targetName = targetId.replace("copy-", "").replace("-btn", ""); // no-surat, tgl-surat, nama-kegiatan, tgl-kegiatan, jabatan-mitra, Tempat
 
       const rows = document.querySelectorAll("#pegawai-list-body tr");
       if (!rows.length) return;
@@ -729,7 +833,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       const isJabatanMitra = targetName === "jabatan-mitra";
       const isTanggalKegiatan = targetName === "tgl-kegiatan";
       const isTanggalSurat = targetName === "tgl-surat";
-      const isNamaKegiatan = targetName === "nama-kegiatan"; // BARU: Tambahkan flag
+      const isNamaKegiatan = targetName === "nama-kegiatan";
+      const isTempat = targetName === "Tempat"; // <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
 
       // Tentukan nama field yang akan diambil nilainya dari baris pertama
       const fieldMulai =
@@ -738,17 +843,23 @@ document.addEventListener("DOMContentLoaded", async () => {
           : isTanggalSurat
           ? "tanggalSurat"
           : isNamaKegiatan
-          ? "namaKegiatan" // Gunakan namaKegiatan
+          ? "namaKegiatan"
           : isJabatanMitra
           ? "jabatanMitra"
+          : isTempat
+          ? "tempat" // <<< PERUBAHAN UNTUK KOLOM TEMPAT BARU >>>
           : "tanggalKegiatanMulai";
 
-      const firstValueMulai = rows[0].querySelector(`[name="${fieldMulai}[]"]`).value;
+      const firstValueMulai = rows[0].querySelector(
+        `[name="${fieldMulai}[]"]`
+      ).value;
       let firstValueSelesai = "";
 
       if (isTanggalKegiatan) {
         // Jika Tanggal Kegiatan, ambil juga nilai Tanggal Selesai
-        firstValueSelesai = rows[0].querySelector(`[name="tanggalKegiatanSelesai[]"]`).value;
+        firstValueSelesai = rows[0].querySelector(
+          `[name="tanggalKegiatanSelesai[]"]`
+        ).value;
       }
 
       // Notifikasi kegagalan dipertahankan
@@ -759,7 +870,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       rows.forEach((row, index) => {
         if (index > 0) {
-          // Salin nilai untuk kolom single-input (termasuk Jabatan Mitra & Tanggal Surat)
+          // Salin nilai untuk kolom single-input (termasuk Jabatan Mitra, Tanggal Surat, Tempat)
           if (row.querySelector(`[name="${fieldMulai}[]"]`)) {
             const targetInput = row.querySelector(`[name="${fieldMulai}[]"]`);
 
@@ -767,8 +878,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               // Tambahkan pembersihan spasi saat menyalin Nomor Surat
               targetInput.value = firstValueMulai.replace(/\s/g, "");
             } else if (isNamaKegiatan) {
-              // BARU: Jika Nama Kegiatan
-              // Salin dan pastikan nilai tetap kapital
+              // Jika Nama Kegiatan, salin dan pastikan nilai tetap kapital
               targetInput.value = firstValueMulai.toUpperCase();
             } else {
               targetInput.value = firstValueMulai;
@@ -783,8 +893,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
           // Salin nilai untuk kolom Tanggal Kegiatan Selesai jika itu tgl-kegiatan
           if (isTanggalKegiatan) {
-            const tglMulaiTarget = row.querySelector(`[name="tanggalKegiatanMulai[]"]`);
-            const tglSelesaiTarget = row.querySelector(`[name="tanggalKegiatanSelesai[]"]`);
+            const tglMulaiTarget = row.querySelector(
+              `[name="tanggalKegiatanMulai[]"]`
+            );
+            const tglSelesaiTarget = row.querySelector(
+              `[name="tanggalKegiatanSelesai[]"]`
+            );
 
             tglMulaiTarget.value = firstValueMulai;
             tglSelesaiTarget.value = firstValueSelesai;
