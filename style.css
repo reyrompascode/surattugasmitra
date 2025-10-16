@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   background: #fff;
   padding: 20px;
@@ -31,6 +31,7 @@ h3 {
 .form-table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .form-table th,
@@ -179,4 +180,60 @@ th button {
 
 .form-table td:nth-child(4) {
   vertical-align: middle;
+}
+.form-table th:nth-child(7),
+.form-table td:nth-child(7) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 150px;
+  min-width: 150px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(6),
+.form-table td:nth-child(6) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 225px;
+  min-width: 225px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(3),
+.form-table td:nth-child(3) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 150px;
+  min-width: 150px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(5),
+.form-table td:nth-child(5) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 110px;
+  min-width: 110px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(1),
+.form-table td:nth-child(1) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 110px;
+  min-width: 110px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(2),
+.form-table td:nth-child(2) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 140px;
+  min-width: 140px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
+}
+.form-table th:nth-child(4),
+.form-table td:nth-child(4) {
+  /* Atur lebar kolom, misalnya 180px. Anda dapat menyesuaikan nilai ini. */
+  width: 160px;
+  min-width: 160px;
+  /* Tambahkan overflow agar teks panjang terpotong jika diperlukan */
+  overflow: hidden;
 }
